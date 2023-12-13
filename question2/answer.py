@@ -41,3 +41,22 @@ print(f"{Employee_name} your net pay is {Net_pay}.")
     otherwise                                       ~~ mujhe ye question smaj nhi aya sir ji  
     da is 30% of bp )
 '''
+
+pf = Basic_Salary * 12 /100
+hra = Basic_Salary * 20 /100
+
+# calculate
+if hra > 2000:
+    hra = 20000
+    
+
+if Basic_Salary < 300000:
+    Dearness_Allowance = Basic_Salary * 20/100
+else:
+    da = Basic_Salary * 30 /100
+    
+    
+
+Gross_pay = Basic_Salary + Dearness_Allowance + hra - Pro_fund
+
+Net_pay = Gross_pay - Pro_fund
