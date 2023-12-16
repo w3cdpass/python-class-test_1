@@ -6,9 +6,12 @@
 
 # user name = name / how many days / location / how many days / what is ur budget / how many days u want to rent a car / totol should be calculated /if user has low budget u have to add money if not u can't travel/
 # calculate your trip expenses 
+
+'''^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'''
+
 print("🚩 Welcome to Pulse Agency 🚩")
 customer_name = input("Hi! What is your good name:  ")
-# ~~~~~ About our agency ~~~~~ 
+            # ~~~~~ About our agency ~~~~~ 
 print(f"""Hello! {customer_name} where you wanna travel.
     Our agency can help you.\nTo find out your best budget places in INDIA.""")
 
@@ -16,13 +19,9 @@ travel_places = int(input("""         ~~~ WE Can TRAVEL YOU ~~~
     CHANDIGHAR, LADAKH, ASSAM, BENGALURU
 Press[1 for Chandighar, 2 for Ladakh, 3 for Assam, 4 for Bengaluru]: """))
 
-# Input some data of place where customer wanna go 
-# budgets
-# ta_budget = int(input("Tell me your Budget: "))
-# cab_rent = int(input("""Wanna book a cab for ride
-#                     dd"""))
-# if 10000 <= ta_budget: #and  ta_budget < 100000:
-    # print()
+'''^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'''
+
+# First option 
 
 if travel_places == 1:
     print("Great Place! You chose Chandighar.")
@@ -51,7 +50,7 @@ if travel_places == 1:
         print(f"We can't guide you with this {chd_bdgt} of budget.")
 
 
-
+# Second option 
 
 elif travel_places == 2:
     print("Cool! You wanna Skiing in Ladakh.")
@@ -75,7 +74,7 @@ elif travel_places == 2:
         print("""Your Ticket and Id_card will be sent to you on text message in under a hour.""")
 
 
-
+# Third option
 
 elif travel_places == 3:
     print("Namste ji! You want to see some Historical Places.")
@@ -98,7 +97,7 @@ elif travel_places == 3:
             print("Congrats! You got 3000 off on your journy.")
         print("""Your Ticket and Id_card will be sent to you on text message in under a hour.""")
 
-
+# Fourth option
 
 elif travel_places == 4:
     print("Apperciate! Welcome to Silicon Valley of INDIA.")
@@ -122,4 +121,4 @@ elif travel_places == 4:
         print("""Your Ticket and Id_card will be sent to you on text message in under a hour.""")
 
 
-# solved but not included cab services.
+# solved all questions but not included cab services.
