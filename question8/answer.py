@@ -29,7 +29,7 @@
 # # list_of_com = list(set(computer_input))
 # # print(list_of_com)
 # computer_input = [sps_list]
-# if player_input == "rock" or computer_input == pick_one_key_value:
+# if player_input == "rock" or computer_input == pick_one_key_value1:
 #     print(f"{computer_input} u win  ")
 # else:
 #     print(f"{pick_one_key_value} random")
@@ -41,30 +41,30 @@ print("""    Stone Paper Scissor game 🎮
 player_input = input("Enter a pick [Stone, Paper, Scissor]: ").lower()
 
 computer_input = {"stone", "paper", "scissor"}
-pick_one_key_value = computer_input.pop()# << this pop up methon will give us a one value
+pick_one_key_value1 = computer_input.pop()# << this pop up methon will give us a one value
 print(f"You pick: {player_input}.")
-print(f"Computer pick: {pick_one_key_value}")
+print(f"Computer pick: {pick_one_key_value1}")
 
-if player_input == pick_one_key_value:
+if player_input == pick_one_key_value1:
     print("it's tie")
     print(f"Ties: {ties + 1}")
 else:
-    if player_input == "stone" and pick_one_key_value == "scissor":
+    if player_input == "stone" and pick_one_key_value1 == "scissor":
         print(" 🪨   VS  ✂️ \nYou win.")
         print(f"Victory: {victory + 1}")
-    elif player_input == "paper" and pick_one_key_value == "stone":
+    elif player_input == "paper" and pick_one_key_value1 == "stone":
         print(" 📰   VS  🪨 \nYou win")
         print(f"Victory: {victory + 1}")
-    elif player_input == "scissor" and pick_one_key_value == "paper":
+    elif player_input == "scissor" and pick_one_key_value1 == "paper":
         print(" ✂️   VS   📰 \nYou win ")
         print(f"Victory: {victory + 1}")
     else:
-        if pick_one_key_value == "stone" and player_input == "scissor":
+        if pick_one_key_value1 == "stone" and player_input == "scissor":
             print(" 🪨   VS  ✂️ \nYou lose.")
             print(f"Loses: {loses + 1}")
-        elif pick_one_key_value == "paper" and player_input == "stone":
+        elif pick_one_key_value1 == "paper" and player_input == "stone":
             print(" 📰   VS  🪨 \nYou lose")
             print(f"Loses: {loses + 1}")
-        elif pick_one_key_value == "scissor" and player_input == "paper":
+        elif pick_one_key_value1 == "scissor" and player_input == "paper":
             print(" ✂️  VS   📰 \nYou lose ")
             print(f"Loses: {loses + 1}")
